@@ -44,13 +44,13 @@ export const helpBugReportButton = {
         const githubButton = new ButtonBuilder()
             .setLabel('🐛 Report Bug on GitHub')
             .setStyle(ButtonStyle.Link)
-            .setURL('https://github.com/codebymitch/TitanBot/issues');
+            .setURL('https://discord.gg/uAwfHuzxwP');
 
         const bugRow = new ActionRowBuilder().addComponents(githubButton);
 
         const bugReportEmbed = createEmbed({
             title: '🐛 Bug Report',
-            description: 'Found a bug? Please report it on our GitHub Issues page!\n\n' +
+            description: 'Found a bug? Please report it on our Discord Server!\n\n' +
                 '**When reporting a bug, please include:**\n' +
                 '• 📝 Detailed description of the issue\n' +
                 '• 📋 Steps to reproduce the problem\n' +
@@ -60,7 +60,7 @@ export const helpBugReportButton = {
             color: 'error'
         });
         bugReportEmbed.setFooter({
-            text: 'TitanBot Bug Reporting System',
+            text: 'Razer United Bug Reporting System',
             iconURL: client.user.displayAvatarURL()
         });
         bugReportEmbed.setTimestamp();
